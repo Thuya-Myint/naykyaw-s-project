@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color:white;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    text-align: center;
+}
+.nav-item{
+    height: 100%;
+}
+.nav-text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-text1:hover{
+    .navStat1{
+        transition: all 0.5s;
+        width: 6px;
+        height: 6px;
+        background-color: rgba(230, 230, 230, 1);
+        border-radius: 1px;
+        position: absolute;
+        opacity: 1;
+        bottom: 0%;
+        animation: opac1 0.2s ease 1;
+    }
+}
+@keyframes opac1 {
+    0%{
+        bottom: -15%;
+    }
+    50%{
+        bottom: -10%;
+    }
+    75%{
+        bottom: -5%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+#b {
+    transition: transform 0.3s ease;
+}
+
+#b:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color:#c10064
+}
+.navbar-custom {
+    transition: all 0.4s;
+    background: rgba(44, 43, 41, 0);
+    width: 100%;;
+    height: 10vh;
+    z-index: 3;
+    position: fixed;
+}
+.scrolled{
+    background: rgba(44, 43, 41, 1);
+}
+
+.navbar-brand {
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+#navbarNav{
+    margin-right: 10%;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: #d1d1d1 !important; /* Light hover effect */
+}
+.nav-contact {
+    border: 2px solid white;
+    padding: 5px 10px;
+
+}
+.nav-contact:hover{
+    background: #C31755;
+    border-color: #C31755;
+}
+.hero-section {
+    backdrop-filter: blur(500px);
+	background:url(img0.jpeg) no-repeat center center/cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    margin-top: -7%;
+    background: rgba(44, 43, 41, 0.9);
+
+    float: inline-end;
+    width: 100vw;
+    height:110vh;
+
+}
+.ads{
+    margin-top: 17%;
+    font-size: 3rem;
+}
+.eul{
+    font-size: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #c10064;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #90004a;
+    color: white;
+}
+#d{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#text{
+    font-size: 23px;
+}
+#cl{
+    color: #C31755;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+
+  }
+
+
+  .btn-custom {
+    background-color: #c10064;
+    color: white;
+
+  }
+  .btn-custom:hover {
+    background-color: #90004a;
+    color: white;
+  }
+  #map{
+    margin-right: 7%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  #dit{
+    transition: all 0.4s;
+    background-color: white;
+    border: 2px solid black;
+  }
+  #dit:hover{
+    background-color: #c10064;
+    border-color: #c10064;
+    color: white;
+  }
+
+  .ft{
+    width: 100%;
+    height: 40vh;
+    background-color:#3b3b29;
+    padding-right: 6%;
+  }
+  .uas{
+    color: white;
+    font-size: 1.6rem;
+    float: left;
+}
+.fn a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1%;
+}
+.fn a:hover{
+    color: #c10064;
+}
+
+@media only screen and (min-width: 756px) {
+
+    #b{
+
+        width: 31%;
+        height: 63vh;
+
+
+    }
+    #p{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+@media only screen and (max-width: 756px) {
+    #b{
+      width: 90%;
+      height: 80vh;
+
+
+    }
+
+
+  }
+  @media only screen and (max-width: 600px) {
+    #b{
+      width: 90%;
+      height: 68vh;
+
+
+    }
+
+  }
